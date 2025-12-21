@@ -30,3 +30,17 @@ console.log(fullName.replace('Broadway Infosys', 'Prithabi Chaudhary')) // Repla
 
 let biography = `I am from Nepal. Nepal is a landlock country. Kathmandu is the capital city of Nepal.`
 console.log(biography.replaceAll('Nepal','America')) // Repalce: Every Nepal word by America
+
+// Type Casting 
+// Implicit Conversion (+ convert into data in string, - convert into number)
+console.log("3" + 3) // 33 {3 into string an concatinate} 
+console.log("5" + +6) // ( +6 => "6" => "5" + "6" => 56)
+console.log( 5 - "45") // -40
+console.log( 5 - -"45") // -"45" = -45 => -(-45) => 45
+
+
+// Explicit Conversion
+let age = 23
+console.log(typeof String(age)) // convert number to string
+let roolNo = "10"
+console.log(typeof Number(roolNo)) // convert string into number
