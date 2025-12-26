@@ -49,7 +49,8 @@ console.log("https:///www.sunilsapkota11.com.np".endsWith('.com')) // false
 console.log("Mr Sushan sir".startsWith('Mr')) // true
 
 //Check whether a string contains "@"
-console.log("broadwayinfosys@gmail.com".includes('@')) // true
+console.log("broadwayinfosys@gmail.com".includes('@','b','z')) // true
+
 
 // check whether two strings are exactly equal.
 let userName = "Ram"
@@ -58,7 +59,7 @@ console.log(userName === user_name) // false
 
 //check whether two strings are equal ignoring case
 console.log(userName == user_name) // false
-console.log("Ram" == "ram") // string ma value ra datatypes comparsion garda same result kina aauxa 
+console.log("Ram" == "ram") 
 
 // check whether a string is empty
 let address = null
@@ -123,8 +124,42 @@ console.log("Bye Bye baby".replace("Bye", "Hi,"))
 console.log("hello world I am javascript".replace("hello world", "Hello World"))
 
 // Check whether a string contains only lowercase letters.
+/* 
+    //=> regular expression is writen between //
+    ^ => start of string
+    [a - z] only lowercase
+    + => check one or more character is lowercase
+    $ => end of string
+
+*/
+
+let str = "Hello"
+function isLoweCaseOnly (str){
+    return /^[a-z]+$/.test(str)
+}
+let  check = isLoweCaseOnly(str) 
+console.log(check)
 
 // Check whether a string contains only uppercase letters.
+function isUpperCaseOnly(str1){
+    return /^[A-Z]+$/.test(str1)
+}
 
+let str1 = "JAVASCRIPT"
+console.log( check = isUpperCaseOnly(str1))
 // Find the index of a specific character in a string.
 console.log("Hello Javascript".indexOf('v'))
+
+
+let upper = "Laddu kha".toUpperCase()
+console.log(upper)
+console.log(/^[A-Z]+$/.test(upper)) // because of space false
+
+console.log("Hari" === "hari") // false
+console.log("Hari" === "Hari") // true
+console.log("Hari" == "hari") // false because js string comparision is case sensitive
+
+let name = "SuniL12"
+console.log(name.replace(/[a-z,A-Z,013456789]/g,""))
+
+console.log(/^[A-Z]+$/.test(name))

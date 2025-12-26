@@ -37,7 +37,7 @@ console.log("3" + 3) // 33 {3 into string an concatinate}
 console.log("5" + +6) // ( +6 => "6" => "5" + "6" => 56)
 console.log( 5 - "45") // -40
 console.log( 5 - -"45") // -"45" = -45 => -(-45) => 45
-
+console.log(5 - "two") // NaN
 
 // Explicit Conversion
 let age = 23
