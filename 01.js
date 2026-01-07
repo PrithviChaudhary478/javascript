@@ -77,5 +77,22 @@ Please click the link below to view your lovely memories: https://www.pexels.com
 Thank You`
 console.log(result)
 
+let users = [
+    {
+        id : 1,
+        userName: "abc",
+        password : "12341234"
+    },
+     {
+        id : 2,
+        userName: "abc",
+        password : "12341234"
+    },
+     {
+        id : 3,
+        userName: "abc",
+        password : "12341234"
+    },
+]
 
-
+function
